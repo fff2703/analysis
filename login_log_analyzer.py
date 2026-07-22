@@ -229,7 +229,7 @@ def print_ip_report(data, threshold, time_window):
     failed_times = data["failed_times"]
 
     print(f"\n{CYAN}IP address report{RESET}")
-    print("-" * 75)
+    
 
     all_ips = set(failed_by_ip) | set(successful_by_ip)
 
@@ -280,7 +280,7 @@ def print_ip_report(data, threshold, time_window):
 
 def print_user_report(attacked_users):
     print(f"\n{CYAN}Targeted users{RESET}")
-    print("-" * 40)
+    
 
     if not attacked_users:
         print("No targeted usernames were found")
@@ -295,7 +295,7 @@ def print_user_report(attacked_users):
 
 def print_summary(data):
     print(f"\n{CYAN}Login log summary{RESET}")
-    print("-" * 40)
+    
 
     print(f"Total log lines: {data['total_lines']}")
 
